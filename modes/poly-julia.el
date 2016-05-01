@@ -1,4 +1,5 @@
 (require 'polymode)
+(require 'poly-markdown)
 
 (defcustom pm-poly/julia
   (pm-polymode-one "julia"
@@ -15,7 +16,6 @@
   :group 'innermodes
   :type 'object)
 
-;; MARKDOWN
-(require 'poly-markdown)
+
 ;;;###autoload (autoload 'poly-markdown+r-mode "poly-R")
 (define-polymode poly-markdown+r-mode pm-poly/markdown :lighter " PM-jmd")
